@@ -1,0 +1,16 @@
+
+<h3>Tweet Filter</h3>
+
+<div class="ps-tweet-list">
+    <ul>
+        <li data-ng-repeat="msg in messages">
+            <div>
+                <div class="ps-tweet-header">
+                    <img class="ps-twitter-image" data-ng-src="{{msg.user.profile_image_url}}" />
+                    <span class="ps-twitter-user">{{msg.user.name}}</span>
+                </div>
+                <div class="">{{ msg.text }}</div>
+            </div>
+        </li>
+    </ul>
+</div>
